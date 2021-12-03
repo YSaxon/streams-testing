@@ -1,0 +1,16 @@
+{
+    "handle": "core.streams",
+    "source": {
+        "path": "streams",
+        "format": "json"
+    },
+    "rules": {
+        "id": "required"
+    },
+    "fields": {
+        "id": {
+            "type": "slug",
+            "config.separator": "-"
+        }
+    }
+}
