@@ -2,6 +2,9 @@
     "name": "streams/testing",
     "description": "Testing for Streams",
     "type": "streams-addon",
+    "license": "MIT",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Ryan Thompson",
@@ -26,8 +29,5 @@
         "branch-alias": {
             "dev-1.0": "1.x-dev"
         }
-    },
-    "license": "MIT",
-    "prefer-stable": true,
-    "minimum-stability": "dev"
+    }
 }
