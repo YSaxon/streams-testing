@@ -1,11 +1,19 @@
 {
-    "name": "Planets",
+    "name": "Starships",
     "config": {
         "source": {
             "type": "file"
-        }
+        },
+        "key_name": "starship_id"
     },
     "fields": [
+        {
+            "handle": "starship_id",
+            "type": "integer",
+            "config": {
+                "default": "increment"
+            }
+        },
         {
             "handle": "created",
             "type": "datetime",
