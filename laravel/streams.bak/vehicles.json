@@ -3,9 +3,17 @@
     "config": {
         "source": {
             "type": "file"
-        }
+        },
+        "key_name": "vehicle_id"
     },
     "fields": [
+        {
+            "handle": "vehicle_id",
+            "type": "integer",
+            "config": {
+                "default": "increment"
+            }
+        },
         {
             "handle": "created",
             "type": "datetime",
