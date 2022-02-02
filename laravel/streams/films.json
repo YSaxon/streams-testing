@@ -3,7 +3,8 @@
     "config": {
         "source": {
             "type": "file"
-        }
+        },
+        "key_name": "episode_id"
     },
     "fields": [
         {
