@@ -5,35 +5,88 @@
             "type": "file"
         }
     },
-    "fields": {
-        "name": "string",
-        "classification": "string",
-        "designation": "string",
-        "average_height": "integer",
-        "skin_colors": "string",
-        "hair_colors": "string",
-        "eye_colors": "string",
-        "average_lifespan": "integer",
-        "homeworld": {
+    "fields": [
+        {
+            "handle": "created",
+            "type": "datetime",
+            "config": {
+                "default": "now"
+            }
+        },
+        {
+            "handle": "edited",
+            "type": "datetime"
+        },
+        {
+            "handle": "name",
+            "type": "string"
+        },
+        {
+            "handle": "classification",
+            "type": "string"
+        },
+        {
+            "handle": "designation",
+            "type": "string"
+        },
+        {
+            "handle": "average_height",
+            "type": "integer"
+        },
+        {
+            "handle": "skin_colors",
+            "type": "string"
+        },
+        {
+            "handle": "hair_colors",
+            "type": "string"
+        },
+        {
+            "handle": "eye_colors",
+            "type": "string"
+        },
+        {
+            "handle": "average_lifespan",
+            "type": "integer"
+        },
+        {
+            "handle": "homeworld",
             "type": "relationship",
             "config": {
                 "related": "planets"
             }
         },
-        "language": "string",
-        "people": {
-            "type": "multiple",
+        {
+            "handle": "language",
+            "type": "string"
+        },
+        {
+            "handle": "people",
+            "type": "array",
             "config": {
-                "related": "people"
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "people"
+                        }
+                    }
+                ]
             }
         },
-        "films": {
-            "type": "multiple",
+        {
+            "handle": "films",
+            "type": "array",
             "config": {
-                "related": "films"
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "films"
+                        }
+                    }
+                ]
             }
-        },
-        "created": "datetime",
-        "edited": "datetime"
-    }
+        }
+    ]
 }

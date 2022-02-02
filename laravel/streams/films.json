@@ -5,44 +5,114 @@
             "type": "file"
         }
     },
-    "fields": {
-        "episode_id": "integer",
-        "title": "string",
-        "opening_crawl": "string",
-        "director": "string",
-        "producer": "string",
-        "release_date": "date",
-        "characters": {
-            "type": "multiple",
+    "fields": [
+        {
+            "handle": "episode_id",
+            "type": "integer",
             "config": {
-                "related": "characters"
+                "default": "increment"
             }
         },
-        "planets": {
-            "type": "multiple",
+        {
+            "handle": "created",
+            "type": "datetime",
             "config": {
-                "related": "planets"
+                "default": "now"
             }
         },
-        "starships": {
-            "type": "multiple",
+        {
+            "handle": "edited",
+            "type": "datetime"
+        },
+        {
+            "handle": "title",
+            "type": "string"
+        },
+        {
+            "handle": "opening_crawl",
+            "type": "string"
+        },
+        {
+            "handle": "director",
+            "type": "string"
+        },
+        {
+            "handle": "producer",
+            "type": "string"
+        },
+        {
+            "handle": "release_date",
+            "type": "date"
+        },
+        {
+            "handle": "characters",
+            "type": "array",
             "config": {
-                "related": "starships"
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "people"
+                        }
+                    }
+                ]
             }
         },
-        "vehicles": {
-            "type": "multiple",
+        {
+            "handle": "planets",
+            "type": "array",
             "config": {
-                "related": "vehicles"
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "planets"
+                        }
+                    }
+                ]
             }
         },
-        "species": {
-            "type": "multiple",
+        {
+            "handle": "starships",
+            "type": "array",
             "config": {
-                "related": "species"
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "starships"
+                        }
+                    }
+                ]
             }
         },
-        "created": "datetime",
-        "edited": "datetime"
-    }
+        {
+            "handle": "vehicles",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "vehicles"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "handle": "species",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "species"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
 }

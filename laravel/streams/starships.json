@@ -5,33 +5,97 @@
             "type": "file"
         }
     },
-    "fields": {
-        "name": "string",
-        "model": "string",
-        "manufacturer": "string",
-        "cost_in_credits": "integer",
-        "length": "integer",
-        "max_atmosphering_speed": "integer",
-        "crew": "string",
-        "passengers": "integer",
-        "cargo_capacity": "integer",
-        "consumables": "string",
-        "hyperdrive_rating": "number",
-        "MGLT": "integer",
-        "starship_class": "integer",
-        "pilots": {
-            "type": "multiple",
+    "fields": [
+        {
+            "handle": "created",
+            "type": "datetime",
             "config": {
-                "related": "people"
+                "default": "now"
             }
         },
-        "films": {
-            "type": "multiple",
+        {
+            "handle": "edited",
+            "type": "datetime"
+        },
+        {
+            "handle": "name",
+            "type": "string"
+        },
+        {
+            "handle": "model",
+            "type": "string"
+        },
+        {
+            "handle": "manufacturer",
+            "type": "string"
+        },
+        {
+            "handle": "cost_in_credits",
+            "type": "integer"
+        },
+        {
+            "handle": "length",
+            "type": "integer"
+        },
+        {
+            "handle": "max_atmosphering_speed",
+            "type": "integer"
+        },
+        {
+            "handle": "crew",
+            "type": "string"
+        },
+        {
+            "handle": "passengers",
+            "type": "integer"
+        },
+        {
+            "handle": "cargo_capacity",
+            "type": "integer"
+        },
+        {
+            "handle": "consumables",
+            "type": "string"
+        },
+        {
+            "handle": "hyperdrive_rating",
+            "type": "number"
+        },
+        {
+            "handle": "MGLT",
+            "type": "integer"
+        },
+        {
+            "handle": "starship_class",
+            "type": "integer"
+        },
+        {
+            "handle": "pilots",
+            "type": "array",
             "config": {
-                "related": "films"
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "people"
+                        }
+                    }
+                ]
             }
         },
-        "created": "datetime",
-        "edited": "datetime"
-    }
+        {
+            "handle": "films",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "films"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
 }

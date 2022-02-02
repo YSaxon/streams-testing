@@ -5,15 +5,48 @@
             "type": "file"
         }
     },
-    "fields": {
-        "name": "string",
-        "height": "integer",
-        "mass": "integer",
-        "hair_color": "string",
-        "skin_color": "string",
-        "eye_color": "string",
-        "birth_year": "string",
-        "gender": {
+    "fields": [
+        {
+            "handle": "created",
+            "type": "datetime",
+            "config": {
+                "default": "now"
+            }
+        },
+        {
+            "handle": "edited",
+            "type": "datetime"
+        },
+        {
+            "handle": "name",
+            "type": "string"
+        },
+        {
+            "handle": "height",
+            "type": "integer"
+        },
+        {
+            "handle": "mass",
+            "type": "integer"
+        },
+        {
+            "handle": "hair_color",
+            "type": "string"
+        },
+        {
+            "handle": "skin_color",
+            "type": "string"
+        },
+        {
+            "handle": "eye_color",
+            "type": "string"
+        },
+        {
+            "handle": "birth_year",
+            "type": "string"
+        },
+        {
+            "handle": "gender",
             "type": "select",
             "config": {
                 "options": {
@@ -23,37 +56,68 @@
                 }
             }
         },
-        "homeworld": {
+        {
+            "handle": "homeworld",
             "type": "relationship",
             "config": {
                 "related": "planets"
             }
         },
-        "films": {
-            "type": "multiple",
+        {
+            "handle": "films",
+            "type": "array",
             "config": {
-                "related": "films"
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "films"
+                        }
+                    }
+                ]
             }
         },
-        "species": {
-            "type": "multiple",
+        {
+            "handle": "species",
+            "type": "array",
             "config": {
-                "related": "species"
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "species"
+                        }
+                    }
+                ]
             }
         },
-        "vehicles": {
-            "type": "multiple",
+        {
+            "handle": "starships",
+            "type": "array",
             "config": {
-                "related": "vehicles"
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "starships"
+                        }
+                    }
+                ]
             }
         },
-        "starships": {
-            "type": "multiple",
+        {
+            "handle": "vehicles",
+            "type": "array",
             "config": {
-                "related": "starships"
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "vehicles"
+                        }
+                    }
+                ]
             }
-        },
-        "created": "datetime",
-        "edited": "datetime"
-    }
+        }
+    ]
 }

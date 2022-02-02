@@ -11,4 +11,9 @@ class ExampleTest extends \Streams\Testing\TestCase
     {
         $this->assertInstanceOf(Stream::class, Streams::make('films'));
     }
+
+    public function test_loads_testing_entries()
+    {
+        $this->assertEquals(7, Streams::entries('films')->count());
+    }
 }

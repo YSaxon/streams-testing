@@ -5,29 +5,81 @@
             "type": "file"
         }
     },
-    "fields": {
-        "name": "string",
-        "rotation_period": "integer",
-        "orbital_period": "integer",
-        "diameter": "integer",
-        "climate": "string",
-        "gravity": "string",
-        "terrain": "string",
-        "surface_water": "boolean",
-        "population": "integer",
-        "residents": {
-            "type": "multiple",
+    "fields": [
+        {
+            "handle": "created",
+            "type": "datetime",
             "config": {
-                "related": "people"
+                "default": "now"
             }
         },
-        "films": {
-            "type": "multiple",
+        {
+            "handle": "edited",
+            "type": "datetime"
+        },
+        {
+            "handle": "name",
+            "type": "string"
+        },
+        {
+            "handle": "rotation_period",
+            "type": "integer"
+        },
+        {
+            "handle": "orbital_period",
+            "type": "integer"
+        },
+        {
+            "handle": "diameter",
+            "type": "integer"
+        },
+        {
+            "handle": "climate",
+            "type": "string"
+        },
+        {
+            "handle": "gravity",
+            "type": "string"
+        },
+        {
+            "handle": "terrain",
+            "type": "string"
+        },
+        {
+            "handle": "surface_water",
+            "type": "boolean"
+        },
+        {
+            "handle": "population",
+            "type": "integer"
+        },
+        {
+            "handle": "residents",
+            "type": "array",
             "config": {
-                "related": "films"
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "people"
+                        }
+                    }
+                ]
             }
         },
-        "created": "datetime",
-        "edited": "datetime"
-    }
+        {
+            "handle": "films",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "films"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
 }
