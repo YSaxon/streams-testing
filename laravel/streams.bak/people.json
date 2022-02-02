@@ -1,0 +1,123 @@
+{
+    "name": "People",
+    "config": {
+        "source": {
+            "type": "file"
+        }
+    },
+    "fields": [
+        {
+            "handle": "created",
+            "type": "datetime",
+            "config": {
+                "default": "now"
+            }
+        },
+        {
+            "handle": "edited",
+            "type": "datetime"
+        },
+        {
+            "handle": "name",
+            "type": "string"
+        },
+        {
+            "handle": "height",
+            "type": "integer"
+        },
+        {
+            "handle": "mass",
+            "type": "integer"
+        },
+        {
+            "handle": "hair_color",
+            "type": "string"
+        },
+        {
+            "handle": "skin_color",
+            "type": "string"
+        },
+        {
+            "handle": "eye_color",
+            "type": "string"
+        },
+        {
+            "handle": "birth_year",
+            "type": "string"
+        },
+        {
+            "handle": "gender",
+            "type": "select",
+            "config": {
+                "options": {
+                    "male": "Male",
+                    "female": "Female",
+                    "n/a": "N/A"
+                }
+            }
+        },
+        {
+            "handle": "homeworld",
+            "type": "relationship",
+            "config": {
+                "related": "planets"
+            }
+        },
+        {
+            "handle": "films",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "films"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "handle": "species",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "species"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "handle": "starships",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "starships"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "handle": "vehicles",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "vehicles"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

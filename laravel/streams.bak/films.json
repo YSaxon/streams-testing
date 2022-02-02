@@ -1,0 +1,118 @@
+{
+    "name": "Films",
+    "config": {
+        "source": {
+            "type": "file"
+        }
+    },
+    "fields": [
+        {
+            "handle": "episode_id",
+            "type": "integer",
+            "config": {
+                "default": "increment"
+            }
+        },
+        {
+            "handle": "created",
+            "type": "datetime",
+            "config": {
+                "default": "now"
+            }
+        },
+        {
+            "handle": "edited",
+            "type": "datetime"
+        },
+        {
+            "handle": "title",
+            "type": "string"
+        },
+        {
+            "handle": "opening_crawl",
+            "type": "string"
+        },
+        {
+            "handle": "director",
+            "type": "string"
+        },
+        {
+            "handle": "producer",
+            "type": "string"
+        },
+        {
+            "handle": "release_date",
+            "type": "date"
+        },
+        {
+            "handle": "characters",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "people"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "handle": "planets",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "planets"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "handle": "starships",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "starships"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "handle": "vehicles",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "vehicles"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "handle": "species",
+            "type": "array",
+            "config": {
+                "items": [
+                    {
+                        "type": "relationship",
+                        "config": {
+                            "related": "species"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
