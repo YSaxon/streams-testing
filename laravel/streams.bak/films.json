@@ -10,6 +10,8 @@
         {
             "handle": "episode_id",
             "type": "integer",
+            "required": true,
+            "unique": true,
             "config": {
                 "default": "increment"
             }
@@ -27,7 +29,9 @@
         },
         {
             "handle": "title",
-            "type": "string"
+            "type": "string",
+            "required": true,
+            "unique": true
         },
         {
             "handle": "opening_crawl",
