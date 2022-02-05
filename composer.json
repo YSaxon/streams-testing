@@ -16,12 +16,6 @@
         "orchestra/testbench": "^6.0",
         "streams/test-addon": "*"
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./laravel/addons/streams/test-addon"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "Streams\\Testing\\": "src/"
@@ -32,6 +26,9 @@
             "Streams\\Testing\\Tests\\": "tests/"
         }
     },
+    "post-autoload-dump": [
+        "@php artisan package:discover --ansi"
+    ],
     "extra": {
         "branch-alias": {
             "dev-1.0": "1.x-dev"
