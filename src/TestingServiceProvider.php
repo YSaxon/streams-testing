@@ -15,7 +15,6 @@ class TestingServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        dd(realpath(__DIR__ . '/../resources'));
-        Assets::addPath('test-addon', realpath(__DIR__ . '/../resources'));
+        Assets::addPath('streams-testing', realpath(__DIR__ . '/../resources'));
     }
 }
