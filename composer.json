@@ -32,9 +32,6 @@
             "Streams\\Testing\\Tests\\": "tests/"
         }
     },
-    "post-autoload-dump": [
-        "@php artisan package:discover --ansi"
-    ],
     "extra": {
         "branch-alias": {
             "dev-1.0": "1.x-dev"
