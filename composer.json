@@ -19,7 +19,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "laravel/addons/streams/test-addon"
+            "url": "./laravel/addons/streams/test-addon"
         }
     ],
     "autoload": {

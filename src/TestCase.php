@@ -6,11 +6,6 @@ use Illuminate\Support\Facades\File;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
-    protected function setUp(): void
-    {
-        parent::setUp();
-    }
-
     protected function tearDown(): void
     {
         $this->restoreStreamsData();
