@@ -1,0 +1,130 @@
+<?php
+
+return [
+    'episode_id' => 3,
+    'title' => 'Revenge of the Sith',
+    'opening_crawl' => 'War! The Republic is crumbling
+under attacks by the ruthless
+Sith Lord, Count Dooku.
+There are heroes on both sides.
+Evil is everywhere.
+In a stunning move, the
+fiendish droid leader, General
+Grievous, has swept into the
+Republic capital and kidnapped
+Chancellor Palpatine, leader of
+the Galactic Senate.
+As the Separatist Droid Army
+attempts to flee the besieged
+capital with their valuable
+hostage, two Jedi Knights lead a
+desperate mission to rescue the
+captive Chancellor....',
+    'director' => 'George Lucas',
+    'producer' => 'Rick McCallum',
+    'release_date' => '2005-05-19',
+    'characters' => [
+        0 => 1,
+        1 => 2,
+        2 => 3,
+        3 => 4,
+        4 => 5,
+        5 => 6,
+        6 => 7,
+        7 => 10,
+        8 => 11,
+        9 => 12,
+        10 => 13,
+        11 => 20,
+        12 => 21,
+        13 => 33,
+        14 => 35,
+        15 => 46,
+        16 => 51,
+        17 => 52,
+        18 => 53,
+        19 => 54,
+        20 => 55,
+        21 => 56,
+        22 => 58,
+        23 => 63,
+        24 => 64,
+        25 => 67,
+        26 => 68,
+        27 => 75,
+        28 => 78,
+        29 => 79,
+        30 => 80,
+        31 => 81,
+        32 => 82,
+        33 => 83,
+    ],
+    'planets' => [
+        0 => 1,
+        1 => 2,
+        2 => 5,
+        3 => 8,
+        4 => 9,
+        5 => 12,
+        6 => 13,
+        7 => 14,
+        8 => 15,
+        9 => 16,
+        10 => 17,
+        11 => 18,
+        12 => 19,
+    ],
+    'starships' => [
+        0 => 2,
+        1 => 32,
+        2 => 48,
+        3 => 59,
+        4 => 61,
+        5 => 63,
+        6 => 64,
+        7 => 65,
+        8 => 66,
+        9 => 68,
+        10 => 74,
+        11 => 75,
+    ],
+    'vehicles' => [
+        0 => 33,
+        1 => 50,
+        2 => 53,
+        3 => 56,
+        4 => 60,
+        5 => 62,
+        6 => 67,
+        7 => 69,
+        8 => 70,
+        9 => 71,
+        10 => 72,
+        11 => 73,
+        12 => 76,
+    ],
+    'species' => [
+        0 => 1,
+        1 => 2,
+        2 => 3,
+        3 => 6,
+        4 => 15,
+        5 => 19,
+        6 => 20,
+        7 => 23,
+        8 => 24,
+        9 => 25,
+        10 => 26,
+        11 => 27,
+        12 => 28,
+        13 => 29,
+        14 => 30,
+        15 => 33,
+        16 => 34,
+        17 => 35,
+        18 => 36,
+        19 => 37,
+    ],
+    'created' => '2014-12-20 18:49:38',
+    'edited' => '2014-12-20 20:47:52',
+];
