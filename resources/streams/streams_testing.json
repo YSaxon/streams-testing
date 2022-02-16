@@ -1,0 +1,14 @@
+{
+    "name": "Streams Testing",
+    "fields": [
+        {
+            "handle": "id",
+            "type": "integer",
+            "required": true,
+            "unique": true,
+            "config": {
+                "default": "increment"
+            }
+        }
+    ]
+}
