@@ -2,7 +2,6 @@
 
 namespace Streams\Testing;
 
-use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
 class TestServiceProvider extends ServiceProvider
@@ -14,6 +13,6 @@ class TestServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        View::addNamespace('streams-testing', __DIR__ . '/../resources/views');
+        # code
     }
 }
