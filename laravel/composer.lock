@@ -8202,12 +8202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-streams/streams-testing.git",
-                "reference": "21f9405093b80415090baec432d183f4cad17300"
+                "reference": "dc2692254ec1c32a32d237ef9297cf9f187ec9d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-streams/streams-testing/zipball/21f9405093b80415090baec432d183f4cad17300",
-                "reference": "21f9405093b80415090baec432d183f4cad17300",
+                "url": "https://api.github.com/repos/laravel-streams/streams-testing/zipball/dc2692254ec1c32a32d237ef9297cf9f187ec9d7",
+                "reference": "dc2692254ec1c32a32d237ef9297cf9f187ec9d7",
                 "shasum": ""
             },
             "require": {
@@ -8241,7 +8241,7 @@
                 "issues": "https://github.com/laravel-streams/streams-testing/issues",
                 "source": "https://github.com/laravel-streams/streams-testing/tree/1.0"
             },
-            "time": "2022-02-17T08:37:28+00:00"
+            "time": "2022-02-17T09:03:04+00:00"
         },
         {
             "name": "symfony/stopwatch",
