@@ -31,7 +31,10 @@
             "handle": "title",
             "type": "string",
             "required": true,
-            "unique": true
+            "unique": true,
+            "rules": [
+                "max:25"
+            ]
         },
         {
             "handle": "opening_crawl",
