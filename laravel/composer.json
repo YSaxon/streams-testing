@@ -7,9 +7,7 @@
     "minimum-stability": "dev",
     "keywords": [],
     "authors": [],
-    "require": {
-        "streams/core": "^2.0"
-    },
+    "require": {},
     "require-dev": {
         "streams/testing": "^1.0"
     },
@@ -19,6 +17,6 @@
         }
     },
     "config": {
-        "vendor-dir": "../vendor/"
+        "vendor-dir": "../../../../vendor"
     }
 }
