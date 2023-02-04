@@ -1,2 +1,0 @@
-
-Simple, flexible content management.
