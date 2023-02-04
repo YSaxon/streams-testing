@@ -49,19 +49,19 @@ You can add the Streams platform to existing Laravel projects by requiring the p
 The `core` package is responsible for the meat and taters; it is the only **required** package.
 
 ```bash
-composer require streams/core
+composer require streams/core:2.0.x-dev
 ```
 
 #### To include UI features:
 
 ```bash
-composer require streams/ui
+composer require streams/ui:1.0.x-dev
 ```
 
 #### To include API features:
 
 ```bash
-composer require streams/api
+composer require streams/api:1.0.x-dev
 ```
 
 #### Update Composer Scripts
