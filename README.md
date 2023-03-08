@@ -9,5 +9,5 @@ This project is documented at [streams.dev](https://streams.dev/docs).
 ## [Installation](https://streams.dev/docs)
 
 ```bash
-composer require streams/api
+composer require streams/api:1.0.x-dev
 ```
